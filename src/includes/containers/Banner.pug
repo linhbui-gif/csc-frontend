@@ -1,6 +1,9 @@
-mixin Banner()
-   .Banner
+mixin BannerCommon({ subtitle,title, className, desc, isHiring })
+   .Banner(class=`${className ? className : ''}`)
        .container
            .Banner-content
-              .Banner-content-subTitle HOME
-              .Banner-content-title Privacy Policy
+              a.Banner-content-subTitle(href="#" style="color:black;")=subtitle
+              .Banner-content-title=title
+              if desc
+                 p.Banner-content-desc=desc
+

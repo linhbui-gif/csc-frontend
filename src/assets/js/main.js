@@ -62,6 +62,7 @@ const owlCarousel = {
     this.setupFeedbackCarousel();
     this.setupGalleryCarousel();
     this.setupRelatedSchoolCarousel();
+    this.setupProductBannerCarousel();
     this.setupPartnersCarousel();
   },
   setupHomeBannerCarousel: function () {
@@ -303,6 +304,36 @@ const owlCarousel = {
         '<img src="./assets/icons/icon-angle-circle-right.svg" alt="" />',
       ],
       margin: 20,
+    });
+  },
+  setupProductBannerCarousel: function () {
+    const $owl = $("#product-banner-carousel").owlCarousel({
+      responsive: {
+        0: {
+          items: 1,
+          slideBy: 1,
+        },
+        768: {
+          items: 1,
+          slideBy: 1,
+        },
+        991: {
+          items: 3,
+          slideBy: 1,
+        },
+      },
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      smartSpeed: 300,
+      lazyLoad: true,
+      dots: false,
+      nav: false,
+      navText: [
+        '<img src="./assets/icons/icon-angle-circle-left.svg" alt="" />',
+        '<img src="./assets/icons/icon-angle-circle-right.svg" alt="" />',
+      ],
     });
   },
   setupModalAuthCarousel: function () {

@@ -1,8 +1,12 @@
-mixin TitleHeader({ title, subtitle,desc })
-    .Title-component
-        h2.TitleHeader
-            span.TitleHeader-content=title
-                br
-                strong=subtitle
+mixin TitleHeader({ title, subtitle,desc, onlytitle, classModify })
+    .Title-component(class=`${classModify ? classModify : ''}`)
+        if onlytitle
+            h3.TitleHeader
+                span.TitleHeader-content=title
+        else
+            h2.TitleHeader
+                span.TitleHeader-content=title
+                    br
+                    strong=subtitle
         if desc
-            p.Description=desc
+                p.Description=desc

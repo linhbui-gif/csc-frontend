@@ -1,9 +1,20 @@
-mixin CardItem({ className, src, width })
+mixin CardItem({ className, src, width, title, desc, isHiring })
     .CardItem.horizontal(class=`${className ? className : ''}`)
         .CardItem-header
-            img(src=`${src}`, width=`${width}`)
+            a
+              img(src=`${src}`, width=`${width}`)
+            if isHiring
+                .isHiring
+                   a(href="#") By Hr
+                   p.isHiring-date 10/26/2022
         .CardItem-body
             block category
-            h3.CardItem-body-title Mobile Solutions
-            p.CardItem-body-desc Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.
+            if title
+                h3.CardItem-body-title=title
+            else
+                h3.CardItem-body-title Mobile Solutions
+            if desc
+               p.CardItem-body-desc=desc
+            else
+               p.CardItem-body-desc Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.
             block card

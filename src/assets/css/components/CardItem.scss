@@ -5,6 +5,38 @@
       margin-right: 1.5rem;
     }
   }
+  &.card-hiring{
+    padding: 5rem 0;
+    border-bottom: 1px solid rgba(24,24,24,.1);
+    .CardItem-header{
+      width: 120px;
+      img{
+        width: 100%;
+        border-radius: 50%;
+      }
+      .isHiring{
+        text-align: center;
+        a{
+          font-size: 1.4rem;
+          color: $red;
+        }
+        &-date{
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .CardItem-body-title{
+      font-size: 2.8rem;
+    }
+    .CardItem-body-desc{
+      font-size: 1.4rem;
+      margin: 2rem 0;
+      @media (max-width: 992px) {
+        font-size: 1.8rem;
+      }
+    }
+
+  }
   &-header{}
   &-body{
     &-title{
@@ -17,6 +49,16 @@
     }
     &-desc{
       font-size: 1.5rem;
+    }
+    &-category{
+      &-big{
+        color: $red!important;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        &:first-child{
+          margin-right: 3rem;
+        }
+      }
     }
   }
   &.vertical{
@@ -31,6 +73,34 @@
       padding: 2rem;
       &-title{
         margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.Card-item-body{
+  &-bottom{
+    &-social{
+      &-item{
+        margin-right: 1rem;
+        &-link{
+          background: $blue-icon;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i{
+            color: white;
+            font-size: 1.6rem;
+          }
+          &.tw{
+            background: #1da1f2;
+          }
+          &.linkein{
+            background: #007bb5;
+          }
+        }
       }
     }
   }

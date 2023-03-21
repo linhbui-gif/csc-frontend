@@ -1100,6 +1100,40 @@ ul {
 .bg-red-medium {
   background: #fe0000; }
 
+.contacts {
+  padding: 10rem 0;
+  background: linear-gradient(180deg, #f15e2b 0, #faa93d 100%); }
+  .contacts-left .Title-component .TitleHeader span {
+    color: white;
+    font-size: 4rem;
+    font-weight: 600; }
+
+.hiring-related-list-item-link {
+  font-size: 1.4rem;
+  color: black;
+  opacity: .5;
+  display: block; }
+  .hiring-related-list-item-link:last-child {
+    font-weight: 700;
+    opacity: 1;
+    font-size: 1.6rem; }
+
+.product-banner {
+  padding-bottom: 5rem; }
+  .product-banner img {
+    width: 100%; }
+  .product-banner-row {
+    background: #f7f7f7;
+    margin: 5rem 0; }
+    .product-banner-row.resever .product-banner-col:first-child {
+      order: 2; }
+    .product-banner-row.resever .product-banner-col:last-child {
+      order: 1; }
+  .product-banner-col {
+    width: 50%; }
+  .product-banner-game img {
+    width: 20%; }
+
 .Button.radius .Button-control {
   border-radius: .5rem; }
 
@@ -1200,6 +1234,30 @@ ul {
   .CardItem.horizontal .CardItem-header {
     margin-right: 1.5rem; }
 
+.CardItem.card-hiring {
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(24, 24, 24, 0.1); }
+  .CardItem.card-hiring .CardItem-header {
+    width: 120px; }
+    .CardItem.card-hiring .CardItem-header img {
+      width: 100%;
+      border-radius: 50%; }
+    .CardItem.card-hiring .CardItem-header .isHiring {
+      text-align: center; }
+      .CardItem.card-hiring .CardItem-header .isHiring a {
+        font-size: 1.4rem;
+        color: #fe0000; }
+      .CardItem.card-hiring .CardItem-header .isHiring-date {
+        font-size: 1.4rem; }
+  .CardItem.card-hiring .CardItem-body-title {
+    font-size: 2.8rem; }
+  .CardItem.card-hiring .CardItem-body-desc {
+    font-size: 1.4rem;
+    margin: 2rem 0; }
+    @media (max-width: 992px) {
+      .CardItem.card-hiring .CardItem-body-desc {
+        font-size: 1.8rem; } }
+
 .CardItem-body-title {
   font-weight: 700;
   color: #181818;
@@ -1207,6 +1265,13 @@ ul {
 
 .CardItem-body-desc {
   font-size: 1.5rem; }
+
+.CardItem-body-category-big {
+  color: #fe0000 !important;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+  .CardItem-body-category-big:first-child {
+    margin-right: 3rem; }
 
 .CardItem.vertical {
   flex-direction: column; }
@@ -1218,6 +1283,24 @@ ul {
     padding: 2rem; }
     .CardItem.vertical .CardItem-body-title {
       margin-bottom: 1rem; }
+
+.Card-item-body-bottom-social-item {
+  margin-right: 1rem; }
+  .Card-item-body-bottom-social-item-link {
+    background: #3b5998;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .Card-item-body-bottom-social-item-link i {
+      color: white;
+      font-size: 1.6rem; }
+    .Card-item-body-bottom-social-item-link.tw {
+      background: #1da1f2; }
+    .Card-item-body-bottom-social-item-link.linkein {
+      background: #007bb5; }
 
 .Header {
   background: #fff; }
@@ -1657,3 +1740,5 @@ ul {
     .Banner-content-title {
       font-size: 3rem;
       font-weight: 600; }
+    .Banner-content-desc {
+      font-size: 1.6rem; }

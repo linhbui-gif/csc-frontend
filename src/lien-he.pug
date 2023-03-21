@@ -1,4 +1,20 @@
 extends includes/layouts/Guest.pug
 
 block pages
-  include includes/containers/ContactInformation.pug
+    +BannerCommon({subtitle:'Ý tưởng của bạn', title:'Giải pháp của chúng tôi',desc:'Liên hệ với chúng tôi ngay để biến ý tưởng của bạn thành hiện thực.'})
+    section.contacts
+        .container
+            .row
+                .col-12.col-lg-6
+                    .contacts-left
+                        +TitleHeader({onlytitle: true,title:'Liên hệ',desc:'Gửi email cho chúng tôi hoặc liên lạc theo số điện thoại bên dưới, chúng tôi luôn chào đón bạn.'})
+                .col-12.col-lg-6
+                    .contacts-right.flex.items-center
+                            each items in [1,2,3]
+                                +CardItem({
+                                    src: './assets/images/sync-icon.png',
+                                    width: "80",
+                                    className: 'vertical text-center',
+                                    title:'Địa chỉ',
+                                    desc:'+84.996.39.39.29',
+                                })
