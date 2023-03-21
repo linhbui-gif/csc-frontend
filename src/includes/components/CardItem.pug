@@ -1,0 +1,9 @@
+mixin CardItem({ className, src, width })
+    .CardItem.horizontal(class=`${className ? className : ''}`)
+        .CardItem-header
+            img(src=`${src}`, width=`${width}`)
+        .CardItem-body
+            block category
+            h3.CardItem-body-title Mobile Solutions
+            p.CardItem-body-desc Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.
+            block card

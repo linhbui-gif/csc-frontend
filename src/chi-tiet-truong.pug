@@ -1,0 +1,260 @@
+extends includes/layouts/Guest.pug
+
+block pages
+  -
+    const dataTableContent = [
+      { link: '#gioithieu', title: 'Giới thiệu chung về trường' },
+      { link: '#thanhpho', title: 'Thành phố' },
+      { link: '#noibat', title: 'Các thông tin nổi bật' },
+      { link: '#chuongtrinh', title: 'Chương trình giảng dạy' },
+      { link: '#cosovatchat', title: 'Cơ sở vật chất' },
+      { link: '#hocphi', title: 'Học phí' },
+      { link: '#hocbong', title: 'Học bổng' },
+      { link: '#khoahoc', title: 'Khoá học' },
+      { link: '#yeucau', title: 'Yêu cầu đầu vào' },
+      { link: '#feedback', title: 'Feed back' },
+      { link: '#thuvienanh', title: 'Thư viện ảnh' },
+      { link: '#truongtuongtu', title: 'Trường tương tự' },
+    ]
+
+  .SchoolDetailPage
+    .container
+      .SchoolDetailPage-wrapper.flex.flex-wrap
+        .SchoolDetailPage-wrapper-item
+          .SchoolDetailPage-main#gioithieu
+            .SchoolDetailPage-image 
+              img(src="./assets/images/image-university.png", alt="")
+
+            .SchoolDetailPage-header.flex.items-center 
+              .SchoolDetailPage-header-logo 
+                img(src="./assets/images/logo-university.png", alt="")
+              .SchoolDetailPage-header-info 
+                h1.SchoolDetailPage-header-info-title.flex.items-center 
+                  |City, University of London
+                  span VIP
+
+                p.SchoolDetailPage-header-info-description We are the UK’s leading provider of digital and blended distance  education
+
+            .SchoolDetailPage-numbers.flex.flex-wrap.justify-around
+              each item in [1,2,3,4,5]
+                .SchoolDetailPage-numbers-item
+                  h6.SchoolDetailPage-numbers-item-title Number 1
+                  h5.SchoolDetailPage-numbers-item-description 123456
+
+
+            .SchoolDetailPage-content.style-content 
+              h3 City, University of London
+              p The University of London is the UK’s leading provider of digital and blended distance education internationally, offering programmes to 45,000 students in 190 countries around the world. Although proudly rooted in London, our community and impact are global.
+              p We are a national leader in the humanities, and we promote their value to society and the economy through knowledge creation and exchange.
+              p We are also a federation of 17 esteemed higher education institutions, with collaboration at the heart of our ethos. The University of London federation is a collective community of more than 240,000 learners and 50,000 staff, delivering world-leading research across all disciplines.
+              p Our passion for increasing access to education and mobilising the collective power and expertise of the federation is central to our ability to transform lives around the world and address the global challenges of the future.
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7tIMHzn0Gzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              h3#thanhpho Thành phố
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.94583828266!2d105.80185828327892!3d21.022816117812383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1660146040429!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              .SchoolDetailPage-card
+                .SchoolDetailPage-card-title GV2G+74 Luân Đôn, Vương Quốc Anh
+                .SchoolDetailPage-card-row.flex.justify-between
+                  .SchoolDetailPage-card-description GV2G+74 Luân Đôn, Vương Quốc Anh
+                  a(href="https://www.google.com/maps/place/Hanoi,+Ho%C3%A0n+Ki%E1%BA%BFm,+Hanoi,+Vietnam/@21.0228161,105.8018582,13z/data=!3m1!4b1!4m5!3m4!1s0x3135ab9bd9861ca1:0xe7887f7b72ca17a9!8m2!3d21.0277644!4d105.8341598" target="_blank").SchoolDetailPage-card-link.flex.items-center
+                    img(src="./assets/icons/icon-map-orange.svg", alt="")
+                    |Xem trên bản đồ
+
+              h3#noibat Các thông tin nổi bật
+              p The University of London is the UK’s leading provider of digital and blended distance education internationally, offering programmes to 45,000 students in 190 countries around the world. Although proudly rooted in London, our community and impact are global.
+              p We are a national leader in the humanities, and we promote their value to society and the economy through knowledge creation and exchange.
+              p We are also a federation of 17 esteemed higher education institutions, with collaboration at the heart of our ethos. The University of London federation is a collective community of more than 240,000 learners and 50,000 staff, delivering world-leading research across all disciplines.
+              p Our passion for increasing access to education and mobilising the collective power and expertise of the federation is central to our ability to transform lives around the world and address the global challenges of the future.
+
+              h3#chuongtrinh Chương trình giảng dạy
+
+              .Tab.merge 
+                .Tab-header.flex
+                  .Tab-header-item Đại học
+                  .Tab-header-item Sau đại học
+
+                .Tab-main
+                  each item in [1,2]
+                    .Tab-main-item
+                      .SchoolDetailPage-programs-item 
+                        .SchoolDetailPage-programs-header.flex.items-center 
+                          .SchoolDetailPage-programs-header-icon 
+                            img(src="./assets/icons/icon-logout.svg", alt="")
+                          = `Làm sao để đăng kí ${item}`
+
+                        .SchoolDetailPage-programs-item-content 
+                          p #[span Thời hạn nộp đơn]
+                          p Mùa thu: 1 tháng 2 (sau đó lăn bánh) Mùa xuân: 1 tháng 11 (sau đó lăn bánh)
+                          br
+                          p #[span Các tài liệu ứng tuyển cần thiết để nhận được ưu đãi]
+                          p Học bạ THPT Bằng tốt nghiệp THPT Hộ chiếu Điểm kiểm tra Tiếng Anh Kế toán Thời gian: Nếu có Bảng điểm Đại học (sinh viên chuyển trường) Bằng chứng bằng cấp (sinh viên chuyển trường) Thư giới thiệu: Chỉ yêu cầu 1 thư giới thiệu đối với sinh viên năm nhất Bản khai cá nhân: Chỉ yêu cầu đối với sinh viên năm nhất Giấy tờ không chính thức được được phép cho các mục đích đánh giá. Các tài liệu chính thức phải được gửi qua đường bưu điện đến trường trước khi đến. Đại học Bang Colorado, Văn phòng Tuyển sinh, 1062 Campus Delivery, Fort Collins, Colorado, 80523, Tel: 970-491-6909
+                          br
+                          p #[span Kiểm tra mã]
+                          p TOEFL: 4075 SAT: 4075 ACT: 504 GRE: 4075 GMAT: Department specifi
+
+                      .SchoolDetailPage-programs-item 
+                        .SchoolDetailPage-programs-header.flex.items-center 
+                          .SchoolDetailPage-programs-header-icon 
+                            img(src="./assets/icons/icon-logout.svg", alt="")
+                          = `Quy trình sau ưu đãi ${item}`
+
+                        .SchoolDetailPage-programs-item-content 
+                          p #[span Thời hạn xác nhận]
+                          p Mùa thu: khoảng 1 tháng trước khi định hướng. Sinh viên phải có đủ thời gian để được chấp thuận thị thực tại quốc gia cư trú của họ. Mùa xuân: khoảng 1 tháng trước khi định hướng. Sinh viên phải có đủ thời gian để được chấp thuận thị thực tại quốc gia cư trú của họ.
+
+              h3#cosovatchat Cơ sở vật chất
+              p The University of London is the UK’s leading provider of digital and blended distance education internationally, offering programmes to 45,000 students in 190 countries around the world. Although proudly rooted in London, our community and impact are global.
+              p We are a national leader in the humanities, and we promote their value to society and the economy through knowledge creation and exchange.
+              p We are also a federation of 17 esteemed higher education institutions, with collaboration at the heart of our ethos. The University of London federation is a collective community of more than 240,000 learners and 50,000 staff, delivering world-leading research across all disciplines.
+              p Our passion for increasing access to education and mobilising the collective power and expertise of the federation is central to our ability to transform lives around the world and address the global challenges of the future.
+
+              h3#hocphi Học phí và yêu cầu
+              .Tab.merge 
+                .Tab-header.flex
+                  .Tab-header-item Mức học phí
+                  .Tab-header-item Yêu cầu
+
+                .Tab-main
+                  each item in [1,2]
+                    .Tab-main-item
+                      .SchoolDetailPage-programs-item 
+                        .SchoolDetailPage-programs-item-content 
+                          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          br
+                          .SchoolDetailPage-programs-tags.flex.flex-wrap
+                            .SchoolDetailPage-programs-tags-item Năm 2021
+
+                          table
+                            thead 
+                              tr 
+                                td Phân loại
+                                td Mức học phí
+                            tbody 
+                              tr 
+                                td Accommodation
+                                td $3,093 - $5,438
+                              tr 
+                                td Meals
+                                td $2,505 - $3,915
+                              tr 
+                                td ESTIMATED TOTAL
+                                td $5,598 - $9,353
+                      
+
+              h3#hocbong Học bổng
+              div(style="max-height: 280px; overflow: auto; padding: 1rem; margin: -1rem -1rem 3.5rem;")
+                each item in [1,2,3,4]
+                  .Collapse(class=`${item === 1 ? 'active' : ''}`)
+                    .Collapse-header
+                      h4.mb-0= `Học bổng loại ${item}`
+                    .Collapse-icon(style="top: 2.2rem;")
+                      img(src="./assets/icons/icon-angle-down.svg", alt="") 
+                    .Collapse-body
+                      p The University of London is the UK’s leading provider of digital and blended distance education internationally, offering programmes to 45,000 students in 190 countries around the world. Although proudly rooted in London, our community and impact are global.
+                      p We are a national leader in the humanities, and we promote their value to society and the economy through knowledge creation and exchange.
+                      p We are also a federation of 17 esteemed higher education institutions, with collaboration at the heart of our ethos. The University of London federation is a collective community of more than 240,000 learners and 50,000 staff, delivering world-leading research across all disciplines.
+                      p Our passion for increasing access to education and mobilising the collective power and expertise of the federation is central to our ability to transform lives around the world and address the global challenges of the future.
+
+                      .SchoolDetailPage-courses-detail.flex.items-center.justify-between
+                        div
+                        a(href="#").SchoolDetailPage-courses-detail-link.flex.items-center
+                          |Xem chi tiết học bổng
+                          img(src="./assets/icons/icon-arrow-right-orange.svg", alt="")
+
+
+              h3#khoahoc Khóa học
+              .Tab.line
+                .SchoolDetailPage-courses-header.flex.items-center.justify-between.flex-wrap
+                  .Tab-header.flex
+                    .Tab-header-item Tất cả
+                    .Tab-header-item Table 1
+                    .Tab-header-item Table 2
+                    .Tab-header-item Table 3
+                    .Tab-header-item Table 4
+
+                  .SchoolDetailPage-courses-header-filter 
+                    +Select({ placeholder: 'Khóa học mới nhất', size: 'small', bordered: true })
+
+                .Tab-main
+                  each item in [1,2,3,4]
+                    .Tab-main-item
+                      div(style="max-height: 500px; overflow: auto; padding: 1rem; margin: -1rem;")
+                        each item in [1,2,3,4]
+                          .Collapse(class=`${item === 1 ? 'active' : ''}`)
+                            .Collapse-header
+                              h4 Agricultural Business (B.S.)
+                              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            .Collapse-icon 
+                              img(src="./assets/icons/icon-angle-down.svg", alt="") 
+                            .Collapse-body
+                              ul 
+                                li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                li Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                                li But also the leap into electronic typesetting, remaining essentially unchanged.
+
+                              .SchoolDetailPage-courses-detail.flex.items-center.justify-between
+                                +Button({ title: 'Nộp hồ sơ', size: 'small', className: 'secondary', bordered: true })
+
+                                a(href="#").SchoolDetailPage-courses-detail-link.flex.items-center
+                                  |Xem chi tiết khóa học
+                                  img(src="./assets/icons/icon-arrow-right-orange.svg", alt="")
+
+              h3#yeucau Yêu cầu đầu vào
+              .Tab.merge 
+                .Tab-header.flex
+                  .Tab-header-item Yêu cầu 1
+                  .Tab-header-item Yêu cầu 2
+
+                .Tab-main
+                  each item in [1,2]
+                    .Tab-main-item
+                      p The University of London is the UK’s leading provider of digital and blended distance education internationally, offering programmes to 45,000 students in 190 countries around the world. Although proudly rooted in London, our community and impact are global.
+                      p We are a national leader in the humanities, and we promote their value to society and the economy through knowledge creation and exchange.
+                      p We are also a federation of 17 esteemed higher education institutions, with collaboration at the heart of our ethos. The University of London federation is a collective community of more than 240,000 learners and 50,000 staff, delivering world-leading research across all disciplines.
+                      p Our passion for increasing access to education and mobilising the collective power and expertise of the federation is central to our ability to transform lives around the world and address the global challenges of the future.
+
+              h3#feedback Feed back
+              .owl-carousel.SchoolDetailPage-feedbacks#Feedbacks-carousel
+                each item in [1,2,3,4,5,6]
+                  .item
+                    .SchoolDetailPage-feedbacks-item
+                      +FeedbackBlock({})
+
+              h3#thuvienanh Thư viện ảnh
+              .owl-carousel.SchoolDetailPage-gallery#Gallery-carousel
+                each item in [1,2,3,4,5,6]
+                  .item
+                    a(href="./assets/images/image-related-school.png" data-fancybox="gallery").SchoolDetailPage-gallery-item
+                      img(src="./assets/images/image-related-school.png", alt="")
+
+              h3#truongtuongtu Trường tương tự
+              .owl-carousel.SchoolDetailPage-ralated-school#RelatedSchool-carousel
+                each item, index in [1,2,3,4,5,6]
+                  .item
+                    .SchoolDetailPage-ralated-school-item
+                      +SchoolBlock({
+                        index,
+                        image: './assets/images/logo-university.png',
+                        title: 'City, University of London',
+                        description: 'We are the UK’s leading provider of digital and blended distance  education',
+                        country: 'UK',
+                        tag: 'VIP',
+                        link: 'chi-tiet-truong.html',
+                        flag: './assets/images/image-flag.png',
+                      })
+
+        .SchoolDetailPage-wrapper-item
+          .SchoolDetailPage-table-content 
+            .Card 
+              .Card-header OverView
+              .Card-body 
+                ul.SchoolDetailPage-table-content-list 
+                  each item in dataTableContent
+                    li.SchoolDetailPage-table-content-list-item 
+                      a(href=`${item.link}`)= item.title
+
+            .SchoolDetailPage-btns 
+              +Button({ title: 'Thêm so sánh', size: 'small', className: 'secondary' })
+              +Button({ title: 'Thêm yêu thích', size: 'small', icon: './assets/icons/icon-heart-circle-orange.svg' })

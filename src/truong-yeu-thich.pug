@@ -1,0 +1,35 @@
+extends includes/layouts/Admin.pug
+
+block pages
+  .ProfilePage
+    .container 
+      .ProfilePage-wrapper.flex.flex-wrap
+        .ProfilePage-wrapper-item
+          .Card.ProfilePage-table-content
+            .Card-header.text-center Tài khoản
+            .Card-body 
+              ul.ProfilePage-table-content-list 
+                each item in dataProfileTableContent
+                  li.ProfilePage-table-content-list-item 
+                    a(href=`${item.link}` class=`${item.isActive ? 'active' : ''}`)= item.title
+                li.ProfilePage-table-content-list-item 
+                  span.js-open-modal(data-modal-id="#ModalLogout") Đăng xuất
+
+        .ProfilePage-wrapper-item
+          .SchoolFavoriteList
+            .Card 
+              .Card-header.text-center Danh sách trường
+              .Card-body 
+                .SchoolFavoriteList-list.flex.flex-wrap 
+                  each item, index in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+                    .SchoolFavoriteList-list-item 
+                      +SchoolBlock({
+                        index,
+                        image: './assets/images/logo-university.png',
+                        title: 'City, University of London',
+                        description: 'We are the UK’s leading provider of digital and blended distance  education',
+                        country: 'UK',
+                        tag: 'VIP',
+                        link: 'chi-tiet-truong.html',
+                        flag: './assets/images/image-flag.png',
+                      })

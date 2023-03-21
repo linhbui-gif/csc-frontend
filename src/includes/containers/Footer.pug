@@ -1,0 +1,49 @@
+footer.Footer
+  .Footer-wrapper 
+    .container 
+      .Footer-list-wrapper.flex.flex-wrap 
+        .Footer-col
+          .Footer-title Du học
+
+          ul.Footer-list
+            each item in [1,2,3,4,5,6,7,8]
+              li
+                a(href="#").Footer-list-item= `Du học ${item}`
+
+        .Footer-col
+          .Footer-title Các trường đại học
+
+          ul.Footer-list
+            each item in [1,2,3,4,5,6,7,8]
+              li
+                a(href="#").Footer-list-item= `Các trường đại học ${item}`
+
+        .Footer-col
+          .Footer-title IELTS
+
+          ul.Footer-list
+            each item in ['IELTS là gì','Đăng ký thi IELTS','Câu hỏi thường gặp','Chương trình ưu đãi','Hỗ trợ thí sinh']
+              li
+                a(href="#").Footer-list-item= item
+
+        .Footer-col
+          .Footer-title Về chúng tôi
+
+          ul.Footer-list
+            each item in ['Giới thiệu','Liên hệ','Facebook','Zalo','Hotline']
+              li
+                a(href="#").Footer-list-item= item
+
+    form(action="#").Footer-form
+      .container 
+        .Footer-form-wrapper.flex.items-center.flex-wrap
+          .Footer-form-item
+            .Footer-form-text Đăng ký nhận tin
+          .Footer-form-item.control
+            +Input({ placeholder: 'Email của bạn' })
+          .Footer-form-item.control
+            +Input({ placeholder: 'Tên của bạn' })
+          .Footer-form-item
+            +Button({ title: 'GỬI' })
+
+    .Footer-copyright Copyright © By King Study

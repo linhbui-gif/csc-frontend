@@ -1,0 +1,29 @@
+.TeamBuilding{
+  background: #f1f1f1;
+  padding: 10rem 0;
+}
+.JoinTeam{
+  padding: 10rem 0;
+}
+.About-pages{
+  background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+  &-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    &-content{
+      text-align: center;
+      &-title{
+        font-size: 4rem;
+        color: white;
+        font-weight: 700;
+      }
+      &-desc{
+        font-size: 1.6rem;
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}

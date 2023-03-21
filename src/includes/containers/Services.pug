@@ -1,0 +1,36 @@
+section.Services
+    .container
+        +TitleHeader({ title:'CSCMobi',subtitle:'Mobile Services' })
+        .row.Services-top
+            each items in [1,2,3,4,5,6]
+                .col-lg-4.mb-5
+                    +CardItem({src:'./assets/images/sync-icon.png', width: "80"})
+        .row
+            .col-lg-4
+                .Services-inner
+
+            .col-lg-8
+                .Services-bottom
+                    +TitleHeader({ title:'Điều gì khiến chúng tôi',subtitle:'khác biệt ?', desc:'Với triết lý sản phẩm vì người dùng, chúng tôi luôn tự cải thiện mình, mang tới những sản phẩm hoàn hảo nhất cho người dùng. Không quá đặt nặng lợi nhuận lên trước, chúng tôi lấy người dùng làm tiêu chí để hoàn thiện sản phẩm.' })
+                    ul.Services-bottom-list
+                        each items in [1,2,3,4,5,6]
+                           li.Services-bottom-list-item.mb-4 Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.
+        .row(style="opacity:0;visibility:hidden")
+            .col-lg-4
+                .Services-inner
+
+            .col-lg-8
+                .Services-bottom
+                    ul.Services-bottom-list
+                        each items in [1,2,3]
+                            li.Services-bottom-list-item.mb-4 Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.
+        .row.team-building
+            .col-12
+                +TitleHeader({
+                    title: 'CSCMobi',
+                    subtitle: 'và những con số',
+                    className:'custom'
+                })
+            each items in [1,2,3]
+                .col-lg-4
+                    +CardItem({src: './assets/images/sync-icon.png', width: "80", className: 'vertical text-center'})

@@ -1,0 +1,8 @@
+mixin TitleHeader({ title, subtitle,desc })
+    .Title-component
+        h2.TitleHeader
+            span.TitleHeader-content=title
+                br
+                strong=subtitle
+        if desc
+            p.Description=desc

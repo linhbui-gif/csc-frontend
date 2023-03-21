@@ -1,0 +1,41 @@
+header.Header
+  .container 
+    .Header-wrapper.flex.items-center.justify-between
+      a(href="index.html").Header-logo
+        img(src="./assets/images/logo.svg" alt="")
+
+      form(action="#").Header-search.flex.items-center 
+        input(type="text" placeholder="Tìm kiếm").Header-search-control
+        button(type="submit").Header-search-button
+          img(src="./assets/icons/icon-search-white.svg" alt="")
+
+      .Header-actions.flex.items-center
+        if isLogged
+          .Header-actions-item.account
+            .Header-actions-item-icon
+              img(src="./assets/images/image-avatar.png" alt="")
+            .Header-actions-item-label.flex.items-center
+              |Administrator
+              img(src="./assets/icons/icon-caret-down.svg", alt="")
+
+            include ./DropdownAccount.pug
+
+        else 
+          .Header-actions-item 
+            .Header-actions-item-icon 
+              img(src="./assets/icons/icon-user-circle.svg" alt="")
+            .Header-actions-item-label 
+              span.js-open-modal(data-modal-id="#ModalAuth") Đăng nhập
+              |/
+              span.js-open-modal(data-modal-id="#ModalAuth") Đăng ký
+
+        a(href="so-sanh-truong.html") 
+          .Header-actions-item 
+            .Header-actions-item-icon 
+              img(src="./assets/icons/icon-heart-circle.svg" alt="")
+            .Header-actions-item-label So sánh
+
+        .Header-actions-item.menu
+          .Header-actions-item-icon 
+            img(src="./assets/icons/icon-menu.svg" alt="")
+          .Header-actions-item-label Menu

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>King Study</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!--include ../containers/Header.pug-->
+    <header class="Navigation">
+      <div class="Navigation-overlay"> </div>
+      <div class="container"> 
+        <div class="Navigation-wrapper flex items-center">
+          <div class="Navigation-logo"><a href="#"><img src="https://cscmobi.com/wp-content/uploads/2018/09/cscmobi-logo-header.png" width="200"></a></div>
+          <div class="Navigation-close"> <img src="./assets/icons/icon-x.svg" alt=""></div>
+          <div class="Navigation-list flex items-center">
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="/">Home</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="gioi-thieu.html">Về chúng tôi</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="#">Sản phẩm</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="hoat-dong.html">Hoạt động</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="#">Tuyển dụng</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="#">Liên hệ</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="Policy.html">Privacy</a>
+            </div>
+          </div>
+          <div class="Navigation-action flex">
+            <li class="Navigation-action-soicial"><a class="Navigation-action-soicial-link" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="Navigation-action-soicial"><a class="Navigation-action-soicial-link" href="#"><i class="fa fa-search"></i></a></li>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--+Customers({ title: 'Tôi đã chọn KingStudy', data: dataCustomers })-->
+    <div class="HeroBanner">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="HeroBanner-left">
+            <div class="HeroBanner-left-header">
+              <h1 class="HeroBanner-left-header-title">
+                <p class="HeroBanner-left-header-title-sub">CSCMOBI</p><span class="HeroBanner-left-header-title-content d-block">Theo đuổi đam mê<br><strong>Thành công sẽ theo đuổi bạn</strong></span>
+              </h1>
+              <div class="HeroBanner-left-action flex">
+                <div class="Button secondary  small " data-modal-id="">
+                  <button class="Button-control flex items-center justify-center" type="button"><span class="Button-control-title">Tuyển dụng</span>
+                  </button>
+                </div>
+                <div class="Button   small " data-modal-id="">
+                  <button class="Button-control flex items-center justify-center" type="button"><span class="Button-control-title">Liên hệ</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="Hero-banner-right"></div>
+        </div>
+      </div>
+    </div>
+    <section class="BannerInfo">
+      <div class="BannerInfo-wrapper flex flex-wrap">
+        <div class="BannerInfo-wrapper-item bg-red-regular">
+          <div class="BannerInfo-wrapper-item-content"><img src="./assets/images/sync-icon.png" width="80">
+            <h3 class="BannerInfo-wrapper-item-content-title">Creative</h3>
+            <p class="BannerInfo-wrapper-item-content-desc">Chúng tôi luôn khuyến khích sự sáng tạo đổi mới trong từng chi tiết, biến những ý tưởng không tưởng thành những sản phẩm tuyệt vời.</p>
+          </div>
+        </div>
+        <div class="BannerInfo-wrapper-item has-image"><a href="#"><img src="https://cscmobi.com/wp-content/uploads/2018/09/img_creative_8.jpg"></a></div>
+        <div class="BannerInfo-wrapper-item bg-red-medium">
+          <div class="BannerInfo-wrapper-item-content"><img src="./assets/images/sync-icon.png" width="80">
+            <h3 class="BannerInfo-wrapper-item-content-title">Creative</h3>
+            <p class="BannerInfo-wrapper-item-content-desc">Chúng tôi luôn khuyến khích sự sáng tạo đổi mới trong từng chi tiết, biến những ý tưởng không tưởng thành những sản phẩm tuyệt vời.</p>
+          </div>
+        </div>
+        <div class="BannerInfo-wrapper-item has-image"><a href="#"><img src="https://cscmobi.com/wp-content/uploads/2018/09/img_creative_8.jpg"></a></div>
+        <div class="BannerInfo-wrapper-item bg-red-medium">
+          <div class="BannerInfo-wrapper-item-content"><img src="./assets/images/sync-icon.png" width="80">
+            <h3 class="BannerInfo-wrapper-item-content-title">Creative</h3>
+            <p class="BannerInfo-wrapper-item-content-desc">Chúng tôi luôn khuyến khích sự sáng tạo đổi mới trong từng chi tiết, biến những ý tưởng không tưởng thành những sản phẩm tuyệt vời.</p>
+          </div>
+        </div>
+        <div class="BannerInfo-wrapper-item has-image"><a href="#"><img src="https://cscmobi.com/wp-content/uploads/2018/09/img_creative_8.jpg"></a></div>
+      </div>
+    </section>
+    <section class="BannerSocial">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4"><img src="https://cscmobi.com/wp-content/uploads/2018/09/applestore.png"></div>
+          <div class="col-lg-4"><img src="https://cscmobi.com/wp-content/uploads/2018/09/applestore.png"></div>
+          <div class="col-lg-4"><img src="https://cscmobi.com/wp-content/uploads/2018/09/applestore.png"></div>
+        </div>
+      </div>
+    </section>
+    <section class="Services">
+      <div class="container">
+        <div class="Title-component">
+          <h2 class="TitleHeader"><span class="TitleHeader-content">CSCMobi<br/><strong>Mobile Services</strong></span></h2>
+        </div>
+        <div class="row Services-top">
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="Services-inner"></div>
+          </div>
+          <div class="col-lg-8">
+            <div class="Services-bottom">
+              <div class="Title-component">
+                <h2 class="TitleHeader"><span class="TitleHeader-content">Điều gì khiến chúng tôi<br/><strong>khác biệt ?</strong></span></h2>
+                <p class="Description">Với triết lý sản phẩm vì người dùng, chúng tôi luôn tự cải thiện mình, mang tới những sản phẩm hoàn hảo nhất cho người dùng. Không quá đặt nặng lợi nhuận lên trước, chúng tôi lấy người dùng làm tiêu chí để hoàn thiện sản phẩm.</p>
+              </div>
+              <ul class="Services-bottom-list">
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="opacity:0;visibility:hidden">
+          <div class="col-lg-4">
+            <div class="Services-inner"></div>
+          </div>
+          <div class="col-lg-8">
+            <div class="Services-bottom">
+              <ul class="Services-bottom-list">
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+                <li class="Services-bottom-list-item mb-4">Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row team-building">
+          <div class="col-12">
+            <div class="Title-component">
+              <h2 class="TitleHeader"><span class="TitleHeader-content">CSCMobi<br/><strong>và những con số</strong></span></h2>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="CardItem horizontal vertical text-center">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="CardItem horizontal vertical text-center">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="CardItem horizontal vertical text-center">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="TeamBuilding">
+      <div class="container">
+        <div class="Title-component">
+          <h2 class="TitleHeader"><span class="TitleHeader-content">CSCMobi<br/><strong>Mobile Services</strong></span></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="CardItem horizontal vertical building">
+              <div class="CardItem-header"><img src="https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg" width="100%"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="CardItem horizontal vertical building">
+              <div class="CardItem-header"><img src="https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg" width="100%"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="CardItem horizontal vertical building">
+              <div class="CardItem-header"><img src="https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg" width="100%"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="CardItem horizontal vertical building">
+              <div class="CardItem-header"><img src="https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg" width="100%"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="CardItem horizontal vertical building">
+              <div class="CardItem-header"><img src="https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg" width="100%"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="CardItem horizontal vertical building">
+              <div class="CardItem-header"><img src="https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg" width="100%"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="JoinTeam">
+      <div class="container">
+        <div class="Title-component">
+          <h2 class="TitleHeader"><span class="TitleHeader-content">Bạn muốn tham gia cùng<br/><strong>CSCMobi team?</strong></span></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="CardItem horizontal">
+              <div class="CardItem-header"><img src="./assets/images/sync-icon.png" width="80"/></div>
+              <div class="CardItem-body">
+                <h3 class="CardItem-body-title">Mobile Solutions</h3>
+                <p class="CardItem-body-desc">Thiết kế giải pháp, tư vấn và xây dựng ứng dụng công nghệ di động vào các sản phẩm dịch vụ cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="HeroBanner-left-action flex justify-center">
+            <div class="Button secondary  small " data-modal-id=""><a class="Button-control flex items-center justify-center" href="#"><span class="Button-control-title">Tuyển dụng</span></a>
+            </div>
+            <div class="Button   small " data-modal-id=""><a class="Button-control flex items-center justify-center" href="#"><span class="Button-control-title">Liên hệ</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="Footer">
+      <div class="Footer-wrapper"> 
+        <div class="container"> 
+          <div class="Footer-list-wrapper flex flex-wrap"> 
+            <div class="Footer-col">
+              <div class="Footer-title">Du học</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">Du học 1</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 2</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 3</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 4</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 5</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 6</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 7</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 8</a></li>
+              </ul>
+            </div>
+            <div class="Footer-col">
+              <div class="Footer-title">Các trường đại học</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">Các trường đại học 1</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 2</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 3</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 4</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 5</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 6</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 7</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 8</a></li>
+              </ul>
+            </div>
+            <div class="Footer-col">
+              <div class="Footer-title">IELTS</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">IELTS là gì</a></li>
+                <li><a class="Footer-list-item" href="#">Đăng ký thi IELTS</a></li>
+                <li><a class="Footer-list-item" href="#">Câu hỏi thường gặp</a></li>
+                <li><a class="Footer-list-item" href="#">Chương trình ưu đãi</a></li>
+                <li><a class="Footer-list-item" href="#">Hỗ trợ thí sinh</a></li>
+              </ul>
+            </div>
+            <div class="Footer-col">
+              <div class="Footer-title">Về chúng tôi</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">Giới thiệu</a></li>
+                <li><a class="Footer-list-item" href="#">Liên hệ</a></li>
+                <li><a class="Footer-list-item" href="#">Facebook</a></li>
+                <li><a class="Footer-list-item" href="#">Zalo</a></li>
+                <li><a class="Footer-list-item" href="#">Hotline</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <form class="Footer-form" action="#">
+          <div class="container"> 
+            <div class="Footer-form-wrapper flex items-center flex-wrap">
+              <div class="Footer-form-item">
+                <div class="Footer-form-text">Đăng ký nhận tin</div>
+              </div>
+              <div class="Footer-form-item control">
+                <div class="Input  middle ">
+                  <input class="Input-control" type="text" placeholder="Email của bạn"/>
+                </div>
+              </div>
+              <div class="Footer-form-item control">
+                <div class="Input  middle ">
+                  <input class="Input-control" type="text" placeholder="Tên của bạn"/>
+                </div>
+              </div>
+              <div class="Footer-form-item">
+                <div class="Button   middle " data-modal-id="">
+                  <button class="Button-control flex items-center justify-center" type="button"><span class="Button-control-title">GỬI</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="Footer-copyright">Copyright © By King Study</div>
+      </div>
+    </footer>
+    <!--include ../containers/Compare.pug--><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

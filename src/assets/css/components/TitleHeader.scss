@@ -1,0 +1,17 @@
+.Title-component{
+  .TitleHeader{
+    &-content{
+      font-size: 3rem;
+      strong{
+        color: $red;
+        font-weight: 700;
+      }
+    }
+    &.custom{
+      margin: 5rem 0;
+    }
+  }
+  .Description{
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,37 @@
+.CardItem{
+  &.horizontal{
+    display: flex;
+    .CardItem-header{
+      margin-right: 1.5rem;
+    }
+  }
+  &-header{}
+  &-body{
+    &-title{
+      font-weight: 700;
+      color: $black;
+      font-size: 2rem;
+      span{
+
+      }
+    }
+    &-desc{
+      font-size: 1.5rem;
+    }
+  }
+  &.vertical{
+    flex-direction: column;
+    .CardItem-header{
+      margin: 0;
+    }
+    &.building{
+      background: white;
+    }
+    .CardItem-body{
+      padding: 2rem;
+      &-title{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

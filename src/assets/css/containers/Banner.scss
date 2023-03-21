@@ -1,0 +1,32 @@
+.Banner{
+  background: url(https://cscmobi.com/wp-content/uploads/2017/03/bgn-blog.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ffffff94;
+  }
+  &-content{
+    z-index: 999;
+    color: $black;
+    position: relative;
+    &-subTitle{
+         font-size: 1.6rem;
+    }
+    &-title{
+    font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+}

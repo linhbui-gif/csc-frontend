@@ -1,0 +1,29 @@
+.BannerInfo{
+  &-wrapper{
+    &-item{
+      display: flex;
+      width: calc(100%/3);
+      align-items: center;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      &-content{
+        color: $white;
+        text-align: center;
+        &-title{
+          margin: 1.5rem 0;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        &-desc{
+          font-size: 1.6rem;
+        }
+      }
+      &.has-image{
+           img{
+             width: 100%;
+           }
+      }
+    }
+  }
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>King Study</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="Header">
+      <div class="container"> 
+        <div class="Header-wrapper flex items-center justify-between"><a class="Header-logo" href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+          <form class="Header-search flex items-center" action="#"> 
+            <input class="Header-search-control" type="text" placeholder="Tìm kiếm">
+            <button class="Header-search-button" type="submit"><img src="./assets/icons/icon-search-white.svg" alt=""></button>
+          </form>
+          <div class="Header-actions flex items-center">
+            <div class="Header-actions-item account">
+              <div class="Header-actions-item-icon"><img src="./assets/images/image-avatar.png" alt=""></div>
+              <div class="Header-actions-item-label flex items-center">Administrator<img src="./assets/icons/icon-caret-down.svg" alt=""></div>
+              <div class="DropdownAccount">
+                <div class="Card">
+                  <div class="Card-header text-center">Tài khoản</div>
+                  <div class="Card-body">
+                    <ul class="ProfilePage-table-content-list"> 
+                      <li class="ProfilePage-table-content-list-item"> <a href="chinh-sua-thong-tin-ca-nhan.html">Tài khoản của bạn</a></li>
+                      <li class="ProfilePage-table-content-list-item"> <a href="theo-doi-ho-so.html">Theo dõi hồ sơ</a></li>
+                      <li class="ProfilePage-table-content-list-item"> <a href="quan-ly-ho-so.html">Quản lý hồ sơ</a></li>
+                      <li class="ProfilePage-table-content-list-item"> <a href="truong-yeu-thich.html">Trường yêu thích</a></li>
+                      <li class="ProfilePage-table-content-list-item"> <a href="dieu-khoan-chinh-sach.html">Điều khoản chính sách</a></li>
+                      <li class="ProfilePage-table-content-list-item"> <a href="doi-mat-khau.html">Đổi mật khẩu</a></li>
+                      <li class="ProfilePage-table-content-list-item"> <span class="js-open-modal" data-modal-id="#ModalLogout">Đăng xuất</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><a href="so-sanh-truong.html"> 
+              <div class="Header-actions-item"> 
+                <div class="Header-actions-item-icon"> <img src="./assets/icons/icon-heart-circle.svg" alt=""></div>
+                <div class="Header-actions-item-label">So sánh</div>
+              </div></a>
+            <div class="Header-actions-item menu">
+              <div class="Header-actions-item-icon"> <img src="./assets/icons/icon-menu.svg" alt=""></div>
+              <div class="Header-actions-item-label">Menu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="Navigation">
+      <div class="Navigation-overlay"> </div>
+      <div class="container"> 
+        <div class="Navigation-wrapper flex items-center">
+          <div class="Navigation-logo"><a href="#"><img src="https://cscmobi.com/wp-content/uploads/2018/09/cscmobi-logo-header.png" width="200"></a></div>
+          <div class="Navigation-close"> <img src="./assets/icons/icon-x.svg" alt=""></div>
+          <div class="Navigation-list flex items-center">
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="/">Home</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="gioi-thieu.html">Về chúng tôi</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="#">Sản phẩm</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="hoat-dong.html">Hoạt động</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="#">Tuyển dụng</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="#">Liên hệ</a>
+            </div>
+            <div class="Navigation-list-wrapper"><a class="Navigation-list-item" href="Policy.html">Privacy</a>
+            </div>
+          </div>
+          <div class="Navigation-action flex">
+            <li class="Navigation-action-soicial"><a class="Navigation-action-soicial-link" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="Navigation-action-soicial"><a class="Navigation-action-soicial-link" href="#"><i class="fa fa-search"></i></a></li>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="ModalLogout Modal" id="ModalLogout">
+      <div class="Modal-overlay"> </div>
+      <div class="Modal-main" style="max-width: 62.8rem;">
+        <div class="Modal-header">
+           THông báo</div>
+        <div class="Modal-body"> 
+          <div class="style-content"> 
+            <p class="text-center">Xác nhận đăng xuất tài khoản</p>
+            <div class="ModalLogout-form-submit flex justify-between" style="column-gap: 2rem;">
+              <div class="ModalLogout-form-submit-item" style="flex: 1">
+                <div class="Button Modal-close secondary  small " data-modal-id="">
+                  <button class="Button-control flex items-center justify-center" type="button"><span class="Button-control-title">Hủy bỏ</span>
+                  </button>
+                </div>
+              </div>
+              <div class="ModalLogout-form-submit-item" style="flex: 1">
+                <div class="Button Modal-close  small " data-modal-id="">
+                  <button class="Button-control flex items-center justify-center" type="button"><span class="Button-control-title">Đồng ý</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ProfilePage">
+      <div class="container"> 
+        <div class="ProfilePage-wrapper flex flex-wrap">
+          <div class="ProfilePage-wrapper-item">
+            <div class="Card ProfilePage-table-content">
+              <div class="Card-header text-center">Tài khoản</div>
+              <div class="Card-body"> 
+                <ul class="ProfilePage-table-content-list"> 
+                  <li class="ProfilePage-table-content-list-item"> <a href="chinh-sua-thong-tin-ca-nhan.html">Tài khoản của bạn</a></li>
+                  <li class="ProfilePage-table-content-list-item"> <a href="theo-doi-ho-so.html">Theo dõi hồ sơ</a></li>
+                  <li class="ProfilePage-table-content-list-item"> <a href="quan-ly-ho-so.html">Quản lý hồ sơ</a></li>
+                  <li class="ProfilePage-table-content-list-item"> <a href="truong-yeu-thich.html">Trường yêu thích</a></li>
+                  <li class="ProfilePage-table-content-list-item"> <a href="dieu-khoan-chinh-sach.html">Điều khoản chính sách</a></li>
+                  <li class="ProfilePage-table-content-list-item"> <a href="doi-mat-khau.html">Đổi mật khẩu</a></li>
+                  <li class="ProfilePage-table-content-list-item"> <span class="js-open-modal" data-modal-id="#ModalLogout">Đăng xuất</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="ProfilePage-wrapper-item">
+            <div class="TrackProfile">
+              <div class="Card"> 
+                <div class="Card-header text-center">Danh sách Hồ sơ</div>
+                <div class="Card-body">
+                  <div class="TrackProfile-item-wrapper Collapse">
+                    <div class="Collapse-header">
+                      <div class="TrackProfile-header flex items-center justify-between">
+                        <div class="TrackProfile-header-logo"> <img src="./assets/images/logo-university.png" alt=""></div>
+                        <div class="TrackProfile-header-info"> 
+                          <h1 class="TrackProfile-header-info-title flex items-center">
+                             City, University of London<span>VIP</span></h1>
+                          <p class="TrackProfile-header-info-description">We are the UK’s leading provider of digital and blended distance  education</p>
+                        </div>
+                        <div class="TrackProfile-text flex items-center justify-end arrow"><img src="./assets/icons/icon-angle-down-orange.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="Collapse-body">
+                      <div class="TrackProfile-body">
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="pending">Đang chờ xét duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="success">Đã duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="pending">Đang chờ xét duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="success">Đã duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="TrackProfile-item-wrapper Collapse">
+                    <div class="Collapse-header">
+                      <div class="TrackProfile-header flex items-center justify-between">
+                        <div class="TrackProfile-header-logo"> <img src="./assets/images/logo-university.png" alt=""></div>
+                        <div class="TrackProfile-header-info"> 
+                          <h1 class="TrackProfile-header-info-title flex items-center">
+                             City, University of London<span>VIP</span></h1>
+                          <p class="TrackProfile-header-info-description">We are the UK’s leading provider of digital and blended distance  education</p>
+                        </div>
+                        <div class="TrackProfile-text flex items-center justify-end arrow"><img src="./assets/icons/icon-angle-down-orange.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="Collapse-body">
+                      <div class="TrackProfile-body">
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="pending">Đang chờ xét duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="success">Đã duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="pending">Đang chờ xét duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="success">Đã duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="TrackProfile-item-wrapper Collapse">
+                    <div class="Collapse-header">
+                      <div class="TrackProfile-header flex items-center justify-between">
+                        <div class="TrackProfile-header-logo"> <img src="./assets/images/logo-university.png" alt=""></div>
+                        <div class="TrackProfile-header-info"> 
+                          <h1 class="TrackProfile-header-info-title flex items-center">
+                             City, University of London<span>VIP</span></h1>
+                          <p class="TrackProfile-header-info-description">We are the UK’s leading provider of digital and blended distance  education</p>
+                        </div>
+                        <div class="TrackProfile-text flex items-center justify-end arrow"><img src="./assets/icons/icon-angle-down-orange.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="Collapse-body">
+                      <div class="TrackProfile-body">
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="pending">Đang chờ xét duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="success">Đã duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="pending">Đang chờ xét duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                        <div class="TrackProfile-item">
+                          <div class="TrackProfile-item-row flex flex-wrap justify-between">
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Tên của bạn: <strong>Hoang Huy</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Quốc gia du học: <strong>Anh Quốc</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Trạng thái: <strong class="success">Đã duyệt</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col">
+                              <div class="TrackProfile-text">Thời gian gửi: <strong>08:00 - 20/07/2022</strong></div>
+                            </div>
+                            <div class="TrackProfile-item-col"></div>
+                            <div class="TrackProfile-item-col"><a class="TrackProfile-text flex items-center justify-end arrow" href="chi-tiet-ho-so.html">Xem chi tiết<img src="./assets/icons/icon-arrow-right-orange.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="Footer">
+      <div class="Footer-wrapper"> 
+        <div class="container"> 
+          <div class="Footer-list-wrapper flex flex-wrap"> 
+            <div class="Footer-col">
+              <div class="Footer-title">Du học</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">Du học 1</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 2</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 3</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 4</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 5</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 6</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 7</a></li>
+                <li><a class="Footer-list-item" href="#">Du học 8</a></li>
+              </ul>
+            </div>
+            <div class="Footer-col">
+              <div class="Footer-title">Các trường đại học</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">Các trường đại học 1</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 2</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 3</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 4</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 5</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 6</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 7</a></li>
+                <li><a class="Footer-list-item" href="#">Các trường đại học 8</a></li>
+              </ul>
+            </div>
+            <div class="Footer-col">
+              <div class="Footer-title">IELTS</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">IELTS là gì</a></li>
+                <li><a class="Footer-list-item" href="#">Đăng ký thi IELTS</a></li>
+                <li><a class="Footer-list-item" href="#">Câu hỏi thường gặp</a></li>
+                <li><a class="Footer-list-item" href="#">Chương trình ưu đãi</a></li>
+                <li><a class="Footer-list-item" href="#">Hỗ trợ thí sinh</a></li>
+              </ul>
+            </div>
+            <div class="Footer-col">
+              <div class="Footer-title">Về chúng tôi</div>
+              <ul class="Footer-list">
+                <li><a class="Footer-list-item" href="#">Giới thiệu</a></li>
+                <li><a class="Footer-list-item" href="#">Liên hệ</a></li>
+                <li><a class="Footer-list-item" href="#">Facebook</a></li>
+                <li><a class="Footer-list-item" href="#">Zalo</a></li>
+                <li><a class="Footer-list-item" href="#">Hotline</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <form class="Footer-form" action="#">
+          <div class="container"> 
+            <div class="Footer-form-wrapper flex items-center flex-wrap">
+              <div class="Footer-form-item">
+                <div class="Footer-form-text">Đăng ký nhận tin</div>
+              </div>
+              <div class="Footer-form-item control">
+                <div class="Input  middle ">
+                  <input class="Input-control" type="text" placeholder="Email của bạn"/>
+                </div>
+              </div>
+              <div class="Footer-form-item control">
+                <div class="Input  middle ">
+                  <input class="Input-control" type="text" placeholder="Tên của bạn"/>
+                </div>
+              </div>
+              <div class="Footer-form-item">
+                <div class="Button   middle " data-modal-id="">
+                  <button class="Button-control flex items-center justify-center" type="button"><span class="Button-control-title">GỬI</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="Footer-copyright">Copyright © By King Study</div>
+      </div>
+    </footer><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

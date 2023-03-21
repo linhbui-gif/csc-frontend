@@ -1,0 +1,65 @@
+extends includes/layouts/Admin.pug
+
+block pages
+  .ProfilePage
+    .container 
+      .ProfilePage-wrapper.flex.flex-wrap
+        .ProfilePage-wrapper-item
+          .Card.ProfilePage-table-content
+            .Card-header.text-center Tài khoản
+            .Card-body 
+              ul.ProfilePage-table-content-list 
+                each item in dataProfileTableContent
+                  li.ProfilePage-table-content-list-item 
+                    a(href=`${item.link}` class=`${item.isActive ? 'active' : ''}`)= item.title
+                li.ProfilePage-table-content-list-item 
+                  span.js-open-modal(data-modal-id="#ModalLogout") Đăng xuất
+
+        .ProfilePage-wrapper-item
+          .EditProfile
+            .Card 
+              .Card-header.text-center Thông tin cá nhân
+              .Card-body 
+                form(action="#").EditProfile-form
+                  .EditProfile-form-avatar
+                    +Avatar({ image: './assets/images/image-avatar.png' })
+                  .EditProfile-form-control.flex.flex-wrap 
+                    .EditProfile-form-item.flex.items-center
+                      .ProfilePage-label Tên của bạn:
+                      +Input({ size: 'small', bordered: true })
+                    .EditProfile-form-item.flex.items-center
+                      .ProfilePage-label Ngày tháng năm sinh:
+                      +Input({ type: 'date', size: 'small', bordered: true })
+                    .EditProfile-form-item.flex.items-center
+                      .ProfilePage-label Email: 
+                      +Input({ size: 'small', bordered: true })
+                    .EditProfile-form-item.flex.items-center
+                      .ProfilePage-label Giới tính: 
+                      .RadioGroup.bordered
+                        .RadioGroup-wrapper.flex.items-center.flex-wrap
+                          +Radio({ name: 'gender', label: 'Nam' })
+                          +Radio({ name: 'gender', label: 'Nữ' })
+
+                    .EditProfile-form-item.flex.items-center
+                      .ProfilePage-label Số điện thoại: 
+                      +Input({ size: 'small', bordered: true })
+                    .EditProfile-form-item.flex.items-center
+                      .ProfilePage-label Địa chỉ:
+                      +Input({ size: 'small', bordered: true })
+                    .EditProfile-form-item.flex.items-center
+                    .EditProfile-form-item.flex.items-center
+                      .ProfilePage-label
+                      +Button({ title: 'Lưu lại', size: 'small' })
+
+            br
+
+            .Card 
+              .Card-header thông tin du học
+              .Card-body 
+                .flex.items-center.justify-between(style="padding: 2rem;")
+                  .ProfilePage-label Trạng thái: #[span Chưa cập nhật]
+                  a(href="cap-nhat-thong-tin-du-hoc.html").ProfilePage-label.flex.items-center
+                    span
+                      strong Cập nhật ngay
+
+                    img(src="./assets/icons/icon-arrow-right-orange.svg" alt="")
