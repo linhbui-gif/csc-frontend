@@ -1,11 +1,11 @@
 window.onload = () => {
-  // menu.init();
+  menu.init();
   owlCarousel.init();
-  tab.init();
-  collapse.init();
-  modal.init();
-  submitFileStep.init();
-  updateInfoSturyAbroadStep.init();
+  // tab.init();
+  // collapse.init();
+  // modal.init();
+  // submitFileStep.init();
+  // updateInfoSturyAbroadStep.init();
   wowJs.init()
 };
 

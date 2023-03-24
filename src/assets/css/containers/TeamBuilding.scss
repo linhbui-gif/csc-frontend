@@ -1,9 +1,51 @@
 .TeamBuilding{
   background: #f1f1f1;
   padding: 10rem 0;
+  .Title-component{
+    margin-bottom: 5rem;
+  }
+  .CardItem-body-desc{
+    display: none;
+  }
+  .CardItem-header{
+    overflow: hidden;
+    img{
+      -webkit-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      -webkit-transition: transform 650ms ease-in-out,filter 650ms ease-in-out;
+      -moz-transition: transform 650ms ease-in-out,filter 650ms ease-in-out;
+      transition: transform 650ms ease-in-out,filter 650ms ease-in-out;
+      transition: transform 650ms ease-in-out,filter 650ms ease-in-out;
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+    &:hover{
+      img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        -moz-transform: scale3d(1.1, 1.1, 1.1);
+        -ms-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+    }
+  }
+  &-category{
+    @media (max-width: 992px) {
+      text-align: left!important;
+    }
+  }
 }
 .JoinTeam{
   padding: 10rem 0;
+  .Title-component{
+    margin-bottom: 5rem;
+  }
+  .TeamBuilding-category{
+    display: none;
+  }
 }
 .About-pages{
   background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
@@ -12,6 +54,9 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    @media (max-width: 992px) {
+      padding: 5rem 0;
+    }
     &-content{
       text-align: center;
       &-title{

@@ -39,6 +39,7 @@
     width: 100%;
     transition: $common-transition;
     border: unset;
+    border-radius: 30px;
     &:hover {
       transform: scale(1.02);
     }

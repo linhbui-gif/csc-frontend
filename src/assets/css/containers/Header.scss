@@ -1,8 +1,14 @@
 .Header {
   background: $white;
-
+  display: none;
+ @media (max-width: 992px) {
+   display: block;
+ }
   &-wrapper {
     padding: 2.4rem 0;
+    @media (max-width: 992px) {
+      padding: 1rem 0;
+    }
   }
 
   &-logo {

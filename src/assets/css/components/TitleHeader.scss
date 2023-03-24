@@ -1,7 +1,10 @@
 .Title-component{
   .TitleHeader{
     &-content{
-      font-size: 3rem;
+      font-size: 5rem;
+      @media (max-width: 992px) {
+        font-size: 3rem;
+      }
       strong{
         color: $red;
         font-weight: 700;

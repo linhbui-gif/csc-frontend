@@ -1,18 +1,24 @@
-mixin CardItem({ className, src, width, title, desc, isHiring })
-    .CardItem.horizontal(class=`${className ? className : ''}`)
+mixin CardItem({ className, src, width, title, desc, isHiring,link, icon, classCustomIcon })
+    .CardItem.horizontal.wow.animate__animated.animate__fadeInRight(class=`${className ? className : ''}`)
         .CardItem-header
-            a
-              img(src=`${src}`, width=`${width}`)
+            if icon
+                .CardItem-header-icon(class=`${classCustomIcon ? classCustomIcon : ''}`)
+                    i.fa.fa-university
+            if src
+                a(href=`${link ? link : ''}`)
+                    img(src=`${src}`, width=`${width}`)
             if isHiring
                 .isHiring
-                   a(href="#") By Hr
-                   p.isHiring-date 10/26/2022
+                    a(href=`${link ? link : ''}`) By Hr
+                    p.isHiring-date 10/26/2022
         .CardItem-body
             block category
             if title
-                h3.CardItem-body-title=title
+                h3.CardItem-body-title
+                    a(href=`${link ? link :''}`)=title
             else
-                h3.CardItem-body-title Mobile Solutions
+                h3.CardItem-body-title
+                    a(href=`${link ? link :''}`) Mobile Solutions
             if desc
                p.CardItem-body-desc=desc
             else

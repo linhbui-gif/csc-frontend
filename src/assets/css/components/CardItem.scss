@@ -5,6 +5,27 @@
       margin-right: 1.5rem;
     }
   }
+  &.title-color-red{
+    .CardItem-body-title a{
+      color: $red!important;
+      font-size: 3rem;
+    }
+  }
+  .TeamBuilding-category{
+    font-size:1.8rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 20%;
+      height: 2px;
+      background: $red;
+      left: 0;
+      bottom: 0;
+    }
+  }
   &.card-hiring{
     padding: 5rem 0;
     border-bottom: 1px solid rgba(24,24,24,.1);
@@ -37,14 +58,51 @@
     }
 
   }
-  &-header{}
+  &-header{
+    &-icon{
+      font-size: 40px;
+      color: $red;
+      &.hover{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #181818;
+        transition: .2s;
+        background-color: transparent;
+        -webkit-box-shadow: 0 0 0 1px var(--primary-color,black) inset;
+        box-shadow: 0 0 0 1px var(--primary-color,black) inset;
+        color: black;
+        line-height: 0;
+        -webkit-box-shadow: 0 0 0 2px #000 inset;
+        box-shadow: 0 0 0 2px #000 inset;
+        i{
+          font-size: 40px;
+          color: black;
+        }
+        &:hover{
+          box-shadow: 0 0 0 2px #ffffff inset;
+          background-color: #181818;
+          color: #ffffff;
+          i{
+            color: white;
+          }
+        }
+      }
+    }
+  }
   &-body{
     &-title{
       font-weight: 700;
       color: $black;
-      font-size: 2rem;
-      span{
 
+      a{
+        font-weight: 700;
+        color: $black;
+        font-size: 2rem;
       }
     }
     &-desc{
@@ -63,11 +121,15 @@
   }
   &.vertical{
     flex-direction: column;
+
     .CardItem-header{
       margin: 0;
     }
     &.building{
       background: white;
+    }
+    &.no-background{
+      background: transparent;
     }
     .CardItem-body{
       padding: 2rem;

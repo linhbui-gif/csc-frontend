@@ -1,97 +1,46 @@
 .Footer {
-  background: $backgroundBlueGradient;
-
-  &-list-wrapper {
-    padding: 6.4rem 0 4rem;
-    row-gap: 1.6rem;
-    column-gap: 1.6rem;
-
-    @media (max-width: 991px) {
-      row-gap: 3.2rem;
-    }
-  }
-
-  &-col {
-    flex: 1;
-
-    @media (max-width: 991px) {
-      flex: 0 0 calc(50% - 0.8rem);
-      max-width: calc(50% - 0.8rem);
-    }
-
-    @media (max-width: 575px) {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-  }
-
-  &-title {
-    margin-bottom: 3.2rem;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: $white;
-  }
-
-  &-list {
-    li:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-
-    a {
-      display: block;
-      color: $white;
-      font-size: 1.8rem;
-      transition: $common-transition;
-
-      &:hover {
-        color: $flamingo;
-      }
-    }
-  }
-
-  &-form {
-    padding: 4rem 0;
-    border-top: 1px solid $black;
-
-    &-wrapper {
-      row-gap: 1.6rem;
-      column-gap: 1.6rem;
-
-      @media (max-width: 991px) {
-        flex-direction: column;
-      }
-    }
-
-    &-item {
-      flex: 1;
-
-      &.control {
-        flex: 2;
-      }
-
-      @media (max-width: 991px) {
-        width: 100%;
-        max-width: 60rem;
-      }
-    }
-
-    &-text {
-      text-transform: uppercase;
-      color: $white;
-      font-size: 1.8rem;
-      font-weight: 700;
-
-      @media (max-width: 991px) {
-        text-align: center;
-      }
-    }
-  }
-
-  &-copyright {
-    text-align: center;
-    color: $white;
-    padding: 2rem;
-    background: $black;
-    font-size: 1.8rem;
-  }
+  background: $black;
+   &-wrapper{
+     &-top{
+       padding: 5rem 0;
+       border-bottom: 1px solid rgba(255,255,255,.1);
+       &-logo{
+         @media (max-width: 992px) {
+           width: 100%;
+           text-align: center;
+         }
+       }
+       &-icon{
+         margin-bottom: 0;
+         @media (max-width: 992px) {
+           width: 100%;
+           text-align: center;
+           margin-top: 3rem;
+         }
+         a {
+           margin: 0 1rem;
+           i{
+             font-size: 2rem;
+             color: $red;
+           }
+         }
+       }
+     }
+     &-bottom{
+       padding: 5rem 0;
+       padding-bottom: 2rem;
+       &-list{
+         color: white;
+         text-align: center;
+         &-item{
+           font-size: 1.4rem;
+           margin-bottom: 1rem;
+           a{
+             color: white;
+             margin-right: 1.5rem;
+           }
+         }
+       }
+     }
+   }
 }

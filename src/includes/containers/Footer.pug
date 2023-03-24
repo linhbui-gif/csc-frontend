@@ -1,49 +1,30 @@
 footer.Footer
   .Footer-wrapper 
     .container 
-      .Footer-list-wrapper.flex.flex-wrap 
-        .Footer-col
-          .Footer-title Du học
-
-          ul.Footer-list
-            each item in [1,2,3,4,5,6,7,8]
-              li
-                a(href="#").Footer-list-item= `Du học ${item}`
-
-        .Footer-col
-          .Footer-title Các trường đại học
-
-          ul.Footer-list
-            each item in [1,2,3,4,5,6,7,8]
-              li
-                a(href="#").Footer-list-item= `Các trường đại học ${item}`
-
-        .Footer-col
-          .Footer-title IELTS
-
-          ul.Footer-list
-            each item in ['IELTS là gì','Đăng ký thi IELTS','Câu hỏi thường gặp','Chương trình ưu đãi','Hỗ trợ thí sinh']
-              li
-                a(href="#").Footer-list-item= item
-
-        .Footer-col
-          .Footer-title Về chúng tôi
-
-          ul.Footer-list
-            each item in ['Giới thiệu','Liên hệ','Facebook','Zalo','Hotline']
-              li
-                a(href="#").Footer-list-item= item
-
-    form(action="#").Footer-form
-      .container 
-        .Footer-form-wrapper.flex.items-center.flex-wrap
-          .Footer-form-item
-            .Footer-form-text Đăng ký nhận tin
-          .Footer-form-item.control
-            +Input({ placeholder: 'Email của bạn' })
-          .Footer-form-item.control
-            +Input({ placeholder: 'Tên của bạn' })
-          .Footer-form-item
-            +Button({ title: 'GỬI' })
-
-    .Footer-copyright Copyright © By King Study
+      .Footer-wrapper-top.flex.flex-wrap.items-center.justify-between
+        .Footer-wrapper-top-logo
+           img(src="https://cscmobi.com/wp-content/uploads/2018/09/cscmobi-logo-white.png" height="71" width="234")
+        ul.Footer-wrapper-top-icon
+          a(href="#")
+             i.fa.fa-facebook
+          a(href="#")
+            i.fa.fa-twitter
+          a(href="#")
+            i.fa.fa-instagram
+          a(href="#")
+            i.fa.fa-youtube
+      .Footer-wrapper-bottom
+          ul.Footer-wrapper-bottom-list
+            li.Footer-wrapper-bottom-list-item  CSCMOBI VIET NAM TECHNOLOGY JOINT STOCK COMPANY
+            li.Footer-wrapper-bottom-list-item  Cscmobi Viet Nam Technology Joint Stock Company
+            li.Footer-wrapper-bottom-list-item  CÔNG TY CỔ PHẦN CÔNG NGHỆ CSCMOBI VIỆT NAM
+            li.Footer-wrapper-bottom-list-item  Địa chỉ: Số 18 ngõ 9, tổ 14, Phường Phú Lương, Quận Hà Đông, Hà Nội, Hà Nội 100000, Việt Nam
+          ul.Footer-wrapper-bottom-list.flex.items-center
+            li.Footer-wrapper-bottom-list-item
+                a(href="") Home
+            li.Footer-wrapper-bottom-list-item
+              a(href="") Về chúng tôi
+            li.Footer-wrapper-bottom-list-item
+              a(href="") Sản phẩm
+            li.Footer-wrapper-bottom-list-item
+              a(href="") Hoạt động

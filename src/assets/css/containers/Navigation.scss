@@ -1,6 +1,7 @@
 .Navigation {
   background: transparent;
-
+  &-logo{
+  }
   @media (max-width: 991px) {
     background: transparent;
     @include fullAbsolute;
@@ -42,10 +43,12 @@
       height: 100vh;
       overflow: auto;
       width: 100%;
-      max-width: 40rem;
+      max-width: 30rem;
       padding: 4.8rem 2.4rem;
       transition: $common-transition;
       transform: translateX(100%);
+      flex-wrap: wrap;
+      align-items: unset;
     }
   }
 
@@ -57,6 +60,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      margin-top: -20rem;
     }
 
     &-wrapper {
@@ -137,9 +141,28 @@
       color: $black;
       transition: $common-transition;
       font-size: 1.8rem;
-      font-weight: 500;
+      font-weight: 600;
       cursor: pointer;
       display: block;
+      position: relative;
+      &:after{
+        content: "";
+        z-index: 5;
+        bottom: 0%;
+        display: block;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        height: 2px;
+        background-color: #53ba00;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: 200ms ease all;
+        -moz-transition: 200ms ease all;
+        transition: 200ms ease all;
+      }
 
       @media (max-width: 991px) {
         color: $cloud-burst;
@@ -148,10 +171,20 @@
 
       &:hover {
         color: $black;
+        &:after{
+          background-color: $red;
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          transform: scaleX(1);
+        }
       }
     }
   }
   &-action{
+    @media (max-width: 992px) {
+      display: none;
+    }
     &-soicial{
       list-style: none;
       margin-left: 1rem;

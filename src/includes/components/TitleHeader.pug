@@ -1,5 +1,5 @@
 mixin TitleHeader({ title, subtitle,desc, onlytitle, classModify })
-    .Title-component(class=`${classModify ? classModify : ''}`)
+    .Title-component.wow.animate__animated.animate__fadeInUp(class=`${classModify ? classModify : ''}`)
         if onlytitle
             h3.TitleHeader
                 span.TitleHeader-content=title

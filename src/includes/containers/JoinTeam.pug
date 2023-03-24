@@ -4,7 +4,10 @@ section.JoinTeam
        .row
            each items in [1,2,3,4,5,6]
                .col-lg-4.mb-5
-                   +CardItem({src: './assets/images/sync-icon.png', width: "80"})
+                   +CardItem({
+                       icon: true,
+                       className: 'vertical text-center',
+                   })
        .col-12
            .HeroBanner-left-action.flex.justify-center
                +Button({

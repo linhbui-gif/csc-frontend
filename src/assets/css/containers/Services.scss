@@ -3,6 +3,15 @@
   background: url(https://cscmobi.com/wp-content/uploads/2018/09/service_bg_creative.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 992px) {
+    background: unset;
+  }
+  .Title-component{
+    margin-bottom: 5rem;
+  }
+  .TeamBuilding-category{
+    display: none;
+  }
   &-top{
     padding: 10rem 0;
     border-top: 1px solid #ccc;
@@ -21,9 +30,15 @@
       flex-wrap: wrap;
       list-style: disc;
       justify-content: space-between;
+      @media (max-width: 992px) {
+        padding-left: 2rem;
+      }
       &-item{
         width: 45%;
         font-size: 1.6rem;
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
     }
   }

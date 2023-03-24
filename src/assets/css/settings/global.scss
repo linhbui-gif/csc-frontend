@@ -11,7 +11,7 @@ html {
   font-size: 10px;
 
   @media (max-width: 1440px) {
-    font-size: 9px;
+    font-size: 7px;
   }
 
   @media (max-width: 1200px) {
@@ -19,7 +19,7 @@ html {
   }
 
   @media (max-width: 991px) {
-    font-size: 7px;
+    font-size: 9px;
   }
 }
 
@@ -49,6 +49,7 @@ ul {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-reverse {
@@ -159,4 +160,7 @@ ul {
 }
 .bg-red-medium{
   background: $red;
+}
+.bg-black-medium{
+  background: $black;
 }

@@ -41,6 +41,7 @@
   &-row{
     background: #f7f7f7;
     margin: 5rem 0;
+    flex-wrap: wrap;
     &.resever{
       .product-banner-col{
         &:first-child{
@@ -54,7 +55,10 @@
   }
   &-col{
     width: 50%;
-
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
   &-game{
     img{
