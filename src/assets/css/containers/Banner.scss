@@ -15,13 +15,14 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: #ffffff94;
+    background: #00000026;
   }
   &-content{
     z-index: 1;
     color: $black;
     position: relative;
     &-subTitle{
+      color: white!important;
          font-size: 1.6rem;
     }
     &-title{
@@ -29,6 +30,7 @@
       font-weight: 600;
       position: relative;
       margin-bottom: 1rem;
+      color: white;
       &:after{
         position: absolute;
         content: "";
@@ -41,6 +43,7 @@
     }
     &-desc{
       font-size: 1.6rem;
+      color: white;
     }
   }
 }

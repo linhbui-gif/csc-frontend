@@ -11,10 +11,17 @@ block pages
                 .col-12.col-lg-6
                     .contacts-right.flex.items-center
                             each items in [1,2,3]
+                                //+CardItem({
+                                //    src: './assets/images/sync-icon.png',
+                                //    width: "80",
+                                //    className: 'vertical text-center',
+                                //    title:'Địa chỉ',
+                                //    desc:'+84.996.39.39.29',
+                                //})
                                 +CardItem({
-                                    src: './assets/images/sync-icon.png',
-                                    width: "80",
+                                    icon: true,
+                                    classCustomIcon: 'hover',
                                     className: 'vertical text-center',
-                                    title:'Địa chỉ',
-                                    desc:'+84.996.39.39.29',
+                                    title: 'Địa chỉ',
+                                    desc: '+84.996.39.39.29',
                                 })

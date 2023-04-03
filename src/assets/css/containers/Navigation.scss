@@ -1,5 +1,17 @@
 .Navigation {
   background: transparent;
+  transition: .5s;
+  &.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    z-index: 9;
+    @media (max-width: 992px) {
+      position: static;
+    }
+  }
   &-logo{
   }
   @media (max-width: 991px) {
@@ -140,8 +152,8 @@
       line-height: 1;
       color: $black;
       transition: $common-transition;
-      font-size: 1.8rem;
-      font-weight: 600;
+      font-size: 1.6rem;
+      font-weight: 500;
       cursor: pointer;
       display: block;
       position: relative;

@@ -2,8 +2,8 @@ extends includes/layouts/Guest.pug
 
 block pages
    section.About-pages
-       .row
-           .col-lg-6
+       .About-pages-wrapper.d-flex.flex-wrap
+           .About-pages-wrapper-item
                .About-pages-left
                      .About-pages-left-content
                          h1.About-pages-left-content-title Chúng tôi là ai?
@@ -16,5 +16,5 @@ block pages
                                  size: 'small',
                              })
                              +Button({title: 'Liên hệ', size: 'small', link: '#'})
-           .col-lg-6
+           .About-pages-wrapper-item
                img(src="https://cscmobi.com/wp-content/uploads/2018/09/aboutus.jpg", width="100%")

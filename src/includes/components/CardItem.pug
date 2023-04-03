@@ -1,4 +1,4 @@
-mixin CardItem({ className, src, width, title, desc, isHiring,link, icon, classCustomIcon })
+mixin CardItem({ className, src, width, title, desc, isHiring,link, icon, classCustomIcon, classNumberCountup })
     .CardItem.horizontal.wow.animate__animated.animate__fadeInRight(class=`${className ? className : ''}`)
         .CardItem-header
             if icon
@@ -15,10 +15,10 @@ mixin CardItem({ className, src, width, title, desc, isHiring,link, icon, classC
             block category
             if title
                 h3.CardItem-body-title
-                    a(href=`${link ? link :''}`)=title
+                    a(href=`${link ? link :''}` class=`${classNumberCountup ? classNumberCountup : classNumberCountup}`)=title
             else
                 h3.CardItem-body-title
-                    a(href=`${link ? link :''}`) Mobile Solutions
+                    a(href=`${link ? link :''}` ) Mobile Solutions
             if desc
                p.CardItem-body-desc=desc
             else

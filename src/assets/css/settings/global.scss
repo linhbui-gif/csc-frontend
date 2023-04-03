@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Gotham, sans-serif;
+  //font-family: Gotham, sans-serif;
   font-weight: 400;
   scroll-behavior: smooth;
 }
@@ -25,6 +25,7 @@ html {
 
 body {
   color: $black !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -163,4 +164,10 @@ ul {
 }
 .bg-black-medium{
   background: $black;
+}
+.About-pages-wrapper-item{
+  width: 50%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
 }
