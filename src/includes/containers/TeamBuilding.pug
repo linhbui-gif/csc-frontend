@@ -4,7 +4,13 @@ section.TeamBuilding
         .row
             each items in [1,2,3]
                 .col-lg-4.mb-4
-                    +CardItem({src: 'https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg', width: "100%", className: 'vertical building'})
+                    +CardItem({
+                        src: 'https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg',
+                        width: "100%",
+                        className: 'vertical building',
+                        isGallery: true,
+                        link: 'https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg',
+                    })
                         block category
                             p.TeamBuilding-category Games
             each items in [1,2,3]
@@ -12,7 +18,9 @@ section.TeamBuilding
                     +CardItem({
                         src: 'https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg',
                         width: "100%",
-                        className: 'vertical building no-background'
+                        className: 'vertical building no-background',
+                        isGallery: true,
+                        link: 'https://cscmobi.com/wp-content/uploads/2018/09/anh01.jpg',
                     })
                         block category
                             p.TeamBuilding-category Games

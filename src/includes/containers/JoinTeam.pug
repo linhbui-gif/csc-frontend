@@ -2,11 +2,12 @@ section.JoinTeam
    .container
        +TitleHeader({ title:'Bạn muốn tham gia cùng',subtitle:'CSCMobi team?' })
        .row
-           each items in [1,2,3,4,5,6]
-               .col-lg-4.mb-5
+           each items in dataIconServiceTeam
+               .col-lg-3.mb-5
                    +CardItem({
                        icon: true,
                        className: 'vertical text-center',
+                       nameIcon:items.iconName,
                    })
        .col-12
            .HeroBanner-left-action.flex.justify-center

@@ -2,9 +2,9 @@ section.Services
     .container
         +TitleHeader({ title:'CSCMobi',subtitle:'Mobile Services' })
         .row.Services-top
-            each items in [1,2,3,4,5,6]
+            each items in dataIconServiceTop
                 .col-lg-4.mb-5
-                    +CardItem({icon: true})
+                    +CardItem({icon: true,nameIcon:items.iconName})
         .row
             .col-lg-5
                 .Services-inner
@@ -31,6 +31,6 @@ section.Services
                     subtitle: 'và những con số',
                     classModify:'custom mb-5 pb-5 mb-lg-0'
                 })
-            each items in [1,2,3]
+            each items in dataIconServiceNumber
                 .col-lg-4
-                    +CardItem({icon: true,classCustomIcon:'hover'  ,className: 'vertical text-center title-color-red', title:'1800', desc:'Chiến dịch ASO game/app thành công', classNumberCountup:'statistic' })
+                    +CardItem({icon: true,nameIcon:items.iconName,classCustomIcon:'hover'  ,className: 'vertical text-center title-color-red', title:'1800', desc:'Chiến dịch ASO game/app thành công', classNumberCountup:'statistic' })

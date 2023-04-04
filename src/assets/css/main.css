@@ -528,6 +528,10 @@ ul {
     .About-pages-wrapper-item {
       width: 100%; } }
 
+@media (max-width: 992px) {
+  .Navigation-logo {
+    display: none; } }
+
 .contacts {
   padding: 10rem 0; }
   .contacts-left .Title-component .TitleHeader span {
@@ -942,8 +946,7 @@ ul {
       .Navigation-list {
         flex-direction: column;
         align-items: flex-start;
-        justify-content: flex-start;
-        margin-top: -20rem; } }
+        justify-content: flex-start; } }
     .Navigation-list-wrapper {
       position: relative; }
       @media (max-width: 991px) {
@@ -988,7 +991,8 @@ ul {
         white-space: nowrap;
         padding: 1.4rem 1.8rem;
         color: #181818;
-        font-weight: 400; }
+        font-weight: 400;
+        text-transform: uppercase; }
         @media (max-width: 991px) {
           .Navigation-list-children .Navigation-list-item {
             width: 100%;
@@ -1002,11 +1006,12 @@ ul {
       line-height: 1;
       color: #181818;
       transition: 0.3s ease;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: 500;
       cursor: pointer;
       display: block;
-      position: relative; }
+      position: relative;
+      text-transform: uppercase; }
       .Navigation-list-item:after {
         content: "";
         z-index: 5;
