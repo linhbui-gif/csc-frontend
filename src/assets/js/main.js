@@ -615,14 +615,3 @@ $(window).scroll(function(){
     $('.Navigation').removeClass('fixed-header');
   }
 });
-UIkit.util.on('#open-gal', 'click', function(e) {
-  UIkit.lightboxPanel({
-    items: [
-      {source: 'https://www.guitarworld.com/.image/t_share/MTUwNjEyMjU1MTY2NzY4ODAx/sfwprs4jpg.jpg', caption: 'PRS Bass'},
-      {source: 'http://www.theguitarmagazine.com/wp-content/uploads/2016/10/PRS-SE-2017.jpg', caption: 'PRS SE 2017'},
-      {source: 'http://www.prsguitars.com/images/privatestock_gallery/1663a.jpg', caption: 'PRS Guitar'},
-      {source: 'https://i.pinimg.com/originals/15/17/ee/1517eedd17800c06dba0a9d66621e025.jpg', caption: 'PRS SE 2017'}
-    ]
-  }).show();
-  e.preventDefault();
-});
