@@ -176,3 +176,9 @@ ul {
     display: none;
   }
 }
+.contacts-right-item{
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  max-width: 100%;
+}

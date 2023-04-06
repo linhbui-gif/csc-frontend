@@ -9,19 +9,13 @@ block pages
                     .contacts-left
                         +TitleHeader({onlytitle: true,title:'Liên hệ',desc:'Gửi email cho chúng tôi hoặc liên lạc theo số điện thoại bên dưới, chúng tôi luôn chào đón bạn.'})
                 .col-12.col-lg-6
-                    .contacts-right.flex.items-center
+                    .contacts-right.row.items-start
                             each items in [1,2,3]
-                                //+CardItem({
-                                //    src: './assets/images/sync-icon.png',
-                                //    width: "80",
-                                //    className: 'vertical text-center',
-                                //    title:'Địa chỉ',
-                                //    desc:'+84.996.39.39.29',
-                                //})
-                                +CardItem({
-                                    icon: true,
-                                    classCustomIcon: 'hover',
-                                    className: 'vertical text-center',
-                                    title: 'Địa chỉ',
-                                    desc: '+84.996.39.39.29',
-                                })
+                                .col-lg-4.contacts-right-item
+                                    +CardItem({
+                                        icon: true,
+                                        classCustomIcon: 'hover',
+                                        className: 'vertical text-center',
+                                        title: 'Địa chỉ',
+                                        desc: '+84.996.39.39.29',
+                                    })

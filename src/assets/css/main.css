@@ -532,6 +532,12 @@ ul {
   .Navigation-logo {
     display: none; } }
 
+.contacts-right-item {
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  max-width: 100%; }
+
 .contacts {
   padding: 10rem 0; }
   .contacts-left .Title-component .TitleHeader span {
@@ -641,7 +647,8 @@ ul {
 
 .CardItem.title-color-red .CardItem-body-title a {
   color: #fe0000 !important;
-  font-size: 3rem; }
+  font-size: 3rem;
+  height: 45px; }
 
 .CardItem .TeamBuilding-category {
   font-size: 1.8rem;
@@ -664,7 +671,8 @@ ul {
     width: 120px; }
     .CardItem.card-hiring .CardItem-header img {
       width: 100%;
-      border-radius: 50%; }
+      border-radius: 50%;
+      min-height: auto; }
     .CardItem.card-hiring .CardItem-header .isHiring {
       text-align: center; }
       .CardItem.card-hiring .CardItem-header .isHiring a {
@@ -711,13 +719,29 @@ ul {
       .CardItem-header-icon.hover:hover i {
         color: white; }
 
+.CardItem-header a img {
+  min-height: 350px;
+  object-fit: cover; }
+
 .CardItem-body-title {
   font-weight: 700;
   color: #181818; }
   .CardItem-body-title a {
     font-weight: 700;
     color: #181818;
-    font-size: 2rem; }
+    font-size: 2rem;
+    white-space: normal;
+    word-break: break-word;
+    height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-line-clamp: 1;
+    -moz-line-clamp: 1;
+    -line-clamp: 1;
+    -webkit-box-orient: vertical; }
 
 .CardItem-body-desc {
   font-size: 1.5rem; }
